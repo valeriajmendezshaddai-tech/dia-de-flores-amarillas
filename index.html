@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Una celebración llena de luz, cariño y flores amarillas." />
+  <title>Día de Flores Amarillas 💛</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="logo" href="#inicio" aria-label="Inicio">flor<span>amarilla</span> <span aria-hidden="true">✿</span></a>
+      <button class="menu-button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#historia">La celebración</a>
+        <a href="#mensaje">Tu mensaje</a>
+        <a class="nav-cta" href="#regalo">Sorprende a alguien</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-copy">
+        <p class="eyebrow">21 de septiembre · una tradición llena de luz</p>
+        <h1>Hoy florece<br /><em>la alegría.</em></h1>
+        <p class="hero-text">Las flores amarillas dicen lo que a veces las palabras no pueden: <strong>te quiero, te pienso y deseo verte feliz.</strong></p>
+        <a class="button button-dark" href="#mensaje">Deja un mensaje <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Ilustración de flores amarillas" role="img">
+        <span class="sun">☼</span>
+        <div class="flower flower-one"><i>✿</i><b></b></div>
+        <div class="flower flower-two"><i>✿</i><b></b></div>
+        <div class="flower flower-three"><i>✿</i><b></b></div>
+        <div class="stem stem-one"></div><div class="stem stem-two"></div><div class="stem stem-three"></div>
+        <span class="leaf leaf-one">⌁</span><span class="leaf leaf-two">⌁</span>
+      </div>
+    </div>
+    <div class="scroll-note">desliza para descubrir <span>↓</span></div>
+  </header>
+
+  <main>
+    <section class="intro section" id="historia">
+      <div class="section-label">01 — el significado</div>
+      <div class="intro-grid">
+        <h2>Un pequeño gesto,<br /><em>un gran sentimiento.</em></h2>
+        <div>
+          <p>Regalar flores amarillas es regalar un pedacito de sol. Representan la amistad, la esperanza, la energía y el deseo de compartir momentos bonitos.</p>
+          <p class="muted">Porque cualquier día puede convertirse en una ocasión especial cuando se llena de color.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="message-section section" id="mensaje">
+      <div class="message-card">
+        <div class="section-label">02 — una dedicatoria</div>
+        <h2>Para alguien<br /><em>muy especial</em></h2>
+        <p>Escribe un mensaje y conviértelo en un detalle inolvidable.</p>
+        <form id="message-form">
+          <label for="name">¿A quién va dirigido?</label>
+          <input id="name" type="text" placeholder="Su nombre" required />
+          <label for="dedication">Tu dedicatoria</label>
+          <textarea id="dedication" rows="3" placeholder="Que nunca te falte un motivo para sonreír..." required></textarea>
+          <button class="button button-yellow" type="submit">Crear mi mensaje <span>✦</span></button>
+        </form>
+        <div class="result" id="result" aria-live="polite"></div>
+      </div>
+      <div class="quote-box"><span class="quote-mark">“</span><p>Donde florecen las flores, también florece la esperanza.</p><span class="quote-flower">✿</span></div>
+    </section>
+
+    <section class="gift-section section" id="regalo">
+      <div class="gift-copy"><div class="section-label">03 — comparte la luz</div><h2>Haz que hoy<br /><em>sea especial.</em></h2><p>Envía esta página a esa persona que ilumina tus días. Un detalle sencillo puede quedarse para siempre en el corazón.</p><button class="button button-dark" id="share-button">Compartir la alegría <span>↗</span></button></div>
+      <div class="gift-visual" aria-hidden="true"><span>✿</span><span>✿</span><span>✿</span><small>un ramo<br />de buenos deseos</small></div>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#inicio">flor<span>amarilla</span> ✿</a><p>Hecho con cariño y un poquito de sol.</p><p>© <span id="year"></span> · Día de Flores Amarillas</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
